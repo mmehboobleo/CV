@@ -11,7 +11,7 @@ body{
     justify-content: center;
 }
 main{
-    width:900px;
+    width:90%;
     background:#eee;
     display:grid;
     /* grid-template-columns: 1fr 3fr; */
@@ -22,7 +22,7 @@ main{
 .left-container{
     background:rgb(57, 137, 212);
     color:#fff;
-    padding-left: 10px;
+    padding-left: 20px;
 }
 .right-container{
     background:#fafafa;
@@ -81,4 +81,32 @@ main{
 }
 .reference{
     margin-block: 10px;
+}
+
+
+/* media queries for screen resolution below 1024px */
+
+@media screen and (max-width:1024px){
+    
+    body{
+        height:200vh;
+    }
+    main{
+        grid-template-columns: 1fr;  
+    }
+    .left-container{
+        display:grid;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .contact{
+        height:90px;
+    }
+    .education{
+        height:140px;
+    }
+
+    
+
 }
